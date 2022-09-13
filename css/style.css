@@ -1,0 +1,366 @@
+/* Global*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a:hover{
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+/* Encabezado de aplicación global*/
+
+#logo {
+    filter: hue-rotate(120deg);
+}
+.header {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    height: 100px;
+    justify-content: space-between;
+    max-width: 1200px;
+    
+}
+
+.header__logoCont {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    align-self: center;
+}
+
+.header__logoCont__logo {
+    height: 100px;;
+
+}
+
+.header__logoCont__titulo {
+    padding: 0;
+    height: 60px;
+    line-height: 20px;
+/*     margin-top: 0px; */
+    align-self: center;
+}
+
+#contacto {
+    display: flex;
+    color: black;
+    padding-right: 10px;
+    align-self: center;
+}
+
+#contacto a:hover {
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.heder__contacto_contactText {
+    height: auto;    
+}
+
+.aNone {
+    text-decoration: none;
+    box-shadow: none;
+    color: black;
+}
+
+#nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+    height: 30px;
+    max-width: 1200px;
+    margin: auto;
+    border-bottom: 1px solid rgb(230, 226, 226);
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px 2px rgb(230, 226, 226);
+    background-color: #F2F2F2;
+}
+nav ul li {
+    display: inline;
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    text-align: right;
+    padding-right: 10px;
+}
+
+#nav a:hover {
+    font-weight: 800;
+    text-decoration: overline;
+}
+
+#main__section {
+    border-radius: 5px;
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    margin-top: 25px;
+    padding: 15px;
+    background-image: url(../imgs/obras.webp);
+    background-repeat: no-repeat;
+    text-align: right;
+}
+
+/* MAIN Section de index.html*/
+
+h1.main__text {
+    font-size: 300%;
+    color: white;
+    text-align: end;
+    margin-top: 8%;
+    text-shadow: black 2px 3px 7px;
+}
+
+p.main__description {
+    font-size: 120%;
+    color: white;
+    text-align: end;
+    text-shadow: black 1px 1px 4px;
+}
+
+p.main__linkMore a {
+    color: white;
+    text-align: right;
+    text-decoration: none;
+    text-shadow: black 1px 1px 4px;
+}
+
+/*Main Sections para pages*/
+#main__section__pages {
+    width: 80%;
+    margin: 20px auto 35px;    
+}
+
+h1.main__text__pages {
+    margin-bottom: 10px;
+}
+
+p.main__description__pages {
+    text-indent: 30px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+p.contactenos {
+    text-align: end;
+}
+
+h3.main__text__pages__subtitle {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-variant: small-caps;
+    font-weight: 600;
+}
+
+ul.seguros {
+    list-style-type: none;
+    text-indent: 10px;
+    line-height: 35px;
+}
+
+.contacto__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacto__container_list {
+    list-style-type: none;
+    line-height: 50px;
+}
+
+.contacto__container_column2 {
+    width: 400px;
+    border-left: 1px solid #B2B2B2;
+    padding-left: 15px;
+}
+
+.contacto__container_column3 {
+    border: 1px solid #B2B2B2;
+}
+
+.formImput {
+    width: 90%;
+    height: 40px;
+}
+
+#msg {
+    height: 100px;
+}
+
+
+/* Galería de 'servicios' --aplica global--*/
+#service__galery {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    justify-content: space-between;
+    padding: 0px 5px 0px 5px;
+    ;
+}
+
+.service1,
+.service2,
+.service3,
+.service4,
+.service5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    width: 15%;
+    height: 150px;
+
+}
+
+.service1 a,
+.service2 a,
+.service3 a,
+.service4 a,
+.service5 a {
+    color: white;
+}
+
+.service1:hover,
+.service2:hover,
+.service3:hover,
+.service4:hover,
+.service5:hover {
+    box-shadow: #262626 2px 3px 10px;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.service1 {
+    background-image: url(../imgs/estudio1.webp);
+    background-position: center;
+    background-size: cover;
+    font-weight: 700;
+    text-shadow: black 0px 2px 2px;
+    text-align: center;
+}
+
+.service2 {
+    background-image: url(../imgs/obras3.webp);
+    background-position: center;
+    background-size: cover;
+    font-weight: 700;
+    text-shadow: black 0px 0.5px 2px;
+    text-align: center;
+}
+
+.service3 {
+    background-image: url(../imgs/trabajo.webp);
+    background-position: center;
+    background-size: cover;
+    font-weight: 700;
+    text-shadow: black 0px 0.5px 2px;
+    text-align: center;
+}
+
+.service4 {
+    background-image: url(../imgs/seguros.webp);
+    background-position: center;
+    background-size: cover;
+    font-weight: 700;
+    text-shadow: black 0px 0.5px 2px;
+    text-align: center;
+}
+
+.service5 {
+    background-image: url(../imgs/cc.webp);
+    background-position: center;
+    background-size: cover;
+    font-weight: 700;
+    text-shadow: black 0px 0.5px 2px;
+    text-align: center;
+}
+
+/* Imagen decoración aplica global */
+.imgDeco {
+    display: block;
+    margin: auto;
+    width: 80%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+/* Footer - Global*/
+ footer {
+    margin: auto;
+    position: relative;
+    bottom: 0;
+    background-color: #B2B2B2;
+    width: 100%;
+    color: #B2B2B2;
+}
+
+.footerAll {
+    width: 80%;
+    border-radius: 7px 7px 0px 0px;
+    margin: auto;
+    padding-bottom: 5px;
+    background-color: #595959;   
+}
+
+.footerColumns {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10px;       
+}
+
+.footer-column1,
+.footer-column2,
+.footer-column3 {
+    width: 33%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.footer-column1,
+.footer-column2 {
+    border-right: 00.5px solid #262626;;
+}
+
+.footerColumns h4 {
+    font-size: 15px;
+}
+
+.footerColumns li {
+    font-size: 14px;
+    list-style-type: none;
+    line-height: 30px;
+}
+
+.footerColumns a {
+    color: #B2B2B2;
+}
+
+.footer__base {
+    background-color: #262626;
+    color: #757575;
+    font-size: 12px;
+    text-align: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 5px;
+}
+
+.footer__base a {
+    color: #757575;
+}
