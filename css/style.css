@@ -4,7 +4,8 @@
     padding: 0px;
     box-sizing: border-box;
 }
-body {
+
+* {
     font-family: 'Open Sans' sans-serif !important;
 }
 
@@ -20,10 +21,21 @@ a {
 }
 
 /* Encabezado de aplicación global*/
-
-#logo {
-    filter: hue-rotate(120deg);
+.navbar-brand {
+   visibility: hidden;
 }
+
+.navbar {
+    display: none;
+    position: absolute;
+    margin-top: 3%;
+    margin-right: 10%;
+}
+
+.bg-light {
+    --bs-bg-opacity: 0;
+}
+
 .header {
     display: grid;
     margin: auto;
@@ -62,6 +74,10 @@ a {
     font-size: 1em;
 }
 
+#contact__responsive {
+    display: none;
+}
+
 #contacto a {
     color: black;
 }
@@ -71,10 +87,6 @@ a {
     text-decoration: underline;
     color: black;
 }
-
-/* .heder__contacto_contactText {
-    height: auto;    
-} */
 
 .aNone {
     text-decoration: none;
@@ -104,6 +116,7 @@ nav ul li {
 
 .menu {
     text-align: right;
+    margin-top: 10px;
     padding-right: 10px;
 }
 
@@ -114,38 +127,31 @@ nav ul li {
 }
 
 /* MAIN Section de index.html*/
-#main__section {
+#main--section {
     border-radius: 5px;
     width: 80%;
-    height: 300px;
     margin: auto;
-    margin-top: 25px;
-    padding: 15px;
-    background-image: url(../imgs/obras.webp);
-    background-repeat: no-repeat;
-    text-align: right;
+    margin-top: 1%;
 }
 
-
-h1.main__text {
-    font-size: 300%;
-    color: white;
-    text-align: end;
-    margin-top: 8%;
-    text-shadow: black 2px 3px 7px;
+.carousel-item img {
+    border-radius: 5px;
 }
 
-p.main__description {
-    font-size: 120%;
+.carousel-caption h5 {
+    font-size: 3em;
     color: white;
-    text-align: end;
+    text-shadow: black 1px 1px 4px;  
+    vertical-align: middle;
+}
+
+.carousel-caption p {
+    color: white;
     text-shadow: black 1px 1px 4px;
 }
 
-p.main__linkMore a {
+.carousel-caption a {
     color: white;
-    text-align: right;
-    text-decoration: none;
     text-shadow: black 1px 1px 4px;
 }
 
@@ -223,36 +229,27 @@ ul.seguros {
     margin-bottom: 25px;
     justify-content: space-between;
     padding: 0px 5px 0px 5px;
-    ;
 }
 
-.service1,
-.service2,
-.service3,
-.service4,
-.service5 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 3px;
-    width: 15%;
-    height: 150px;
-
-}
-
-.service1 a,
-.service2 a,
-.service3 a,
-.service4 a,
-.service5 a {
+#service__galery a {
     color: white;
 }
 
-.service1:hover,
-.service2:hover,
-.service3:hover,
-.service4:hover,
-.service5:hover {
+.service__item {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    width: 15%;
+    height: 150px;
+    word-wrap: break-word;
+    transition: .3s ease-in-out all;
+}
+
+.service__item:hover {
+    margin-top: -5px;
     box-shadow: #262626 2px 3px 10px;
     font-weight: 800;
     font-size: 18px;
@@ -303,6 +300,7 @@ ul.seguros {
     text-align: center;
 }
 
+
 /* Imagen decoración aplica global */
 .imgDeco {
     display: block;
@@ -320,6 +318,7 @@ ul.seguros {
     background-color: #B2B2B2;
     width: 100%;
     color: #B2B2B2;
+    word-wrap: break-word;
 }
 
 .footerAll {
@@ -381,74 +380,104 @@ ul.seguros {
 
 /* ****RESPONSIVE**** */
 @media (max-width: 1025px) {
-    .menu {
+    .menu,
+    #contacto {
         display: none;
     }
-}
 
-@media (max-width: 830px) {
-    #contacto {
+    #contact__responsive {
         display: block;
-        color: black;
-        padding-right: 1%;
-        align-self: center;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    .carousel-caption h5 {
+        font-size: 2em;
+    }
+
+    .carousel-caption p {
         font-size: 1em;
     }
 
-    .header__contacto__contactText {
-        text-align: right;
+    .service__item {
+        width: 18%;
+        font-size: 0.8em;
     }
 
-    .separador {
-        display: none;
-    }
 }
 
-@media (max-width: 500px) {
+
+@media (max-width: 600px) {
     .header {
         display: grid;
         margin: auto;
         margin-top: 5%;
         width: 95%;
         grid-template-columns: 0.5fr 2fr;
-        grid-template-rows: 5em 2em;
-        gap: 1px;
     }
 
     .header__logoCont {
         display: flex;
         align-items: center;
-        /* margin-top: 10em; */
         align-self: center;
     }
     .header__logoCont_text {
         justify-content: left;
     }
 
-    #contacto {
-        display: inline;
-        color: black;
+    .navbar {
+        margin-top: 2%;
+        margin-right: 1%;
     }
-    
-    .header #contacto {
-        display: block;
+
+    #main--section {
+        margin-top: 5%;
+    }
+
+    .carousel-caption h5 {
         font-size: 1em;
-        grid-column: 1/3
     }
 
-    .header__contacto__contactText {
-        text-align: right;
-    }
-
-    #nav {
+    .carousel-caption p {
         display: none;
     }
 
-    #main__section {
+    #service__galery {
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        margin: auto;
+        margin-top: 5%;
+    }
+
+    .service__item {
+        width: 100%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        font-size: 1.1em;
+    }
+
+    #nav,
+    #main--section,
+    #service__galery,
+    .imgDeco,
+    .footerAll,
+    .footer__base {
        width: 90%;
     }
 
-    #service_galery {
-        font-size: 10em;
+    .footerColumns {
+        flex-direction: column-reverse;
     }
+
+    .footer-items {
+        width: 95%;
+        border: none;
+    }
+
 }
