@@ -90,7 +90,7 @@
     <section id="main__section__pages">
       <h1 class="main__text__pages">Contacto</h1>
       <div class="contacto__container">
-        <div class="contacto__container_column1">
+        <div class="contacto__container_column1 contacto__item">
           <ul class="contacto__container_list">
             <li><a class="aNone" href="tel:+5492214259911" target="_blank">Tel. +54 221 4259911 </a></li>
             <li><a class="aNone" href="http://wa.me/5492214259911" target="_blank">Whatsapp +542214259911</a></li>
@@ -98,23 +98,36 @@
             <li><a class="aNone" href="https://g.page/estudioantoniovampa?share" target="_blank">Calle 48 845 4ºB - La Plata (1900) - Bs.As. Argentina</a></li>    
           </ul>
         </div>
-        <div class="contacto__container_column2">
+        <div class="contacto__container_column2 contacto__item">
           <h3 class="main__text__pages__subtitle">Escríbanos</h3>
           <form id="formContact" action="#" method="post">
-            <label for="name">Nombre:</label><br>
-            <input class="formImput" type="text" id="name" name="name" placeholder="* nombre" required><br>
-            <label for="mail">Correo electrónico:</label><br>
-            <input class="formImput" type="email" id="mail" name="mail" placeholder="* correo" required><br>
-            <label for="tel">Teléfono</label><br>
-            <input class="formImput" type="tel" id="tel" name="tel" placeholder="(opcional)"><br>
-            <label for="msg">Mensaje:</label><br>
-            <textarea class="formImput" id="msg" name="message" required></textarea><br>
-            <button type="submit">Enviar</button>
+            <div class="form-floating form-control-sm">
+              <textarea class="form-control" placeholder="Nombre y apellido" id="name"></textarea>
+              <label for="name">Nombre y apellido</label>
+            </div>
+            <div class="form-floating form-control-sm">
+              <textarea class="form-control" placeholder="Correo electrónico" id="mail"></textarea>
+              <label for="mail">Correo electrónico</label>
+            </div>
+            <div class="form-floating form-control-sm">
+              <textarea class="form-control" placeholder="Teléfono" id="tel"></textarea>
+              <label for="tel">Teléfono</label>
+            </div>
+            <div class="form-floating form-control-sm">
+              <textarea class="form-control" placeholder="msg" id="msg"></textarea>
+              <label for="msg">Comentarios</label>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="btn btn-primary mb-3">enviar</button>
+            </div>
           </form>
         </div>
         <div class="contacto__container_column3">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.532893338734!2d-57.95859648522191!3d-34.91816998170978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e632617b5fdd%3A0xc91f2b2cc4e5c3b3!2sEstudio%20Jur%C3%ADdico%20Antonio%20-%20Vampa%20%7C%20abogados!5e0!3m2!1ses-419!2sar!4v1661711824805!5m2!1ses-419!2sar" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.532893338734!2d-57.95859648522191!3d-34.91816998170978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e632617b5fdd%3A0xc91f2b2cc4e5c3b3!2sEstudio%20Jur%C3%ADdico%20Antonio%20-%20Vampa%20%7C%20abogados!5e0!3m2!1ses-419!2sar!4v1661711824805!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+      </div>
+      <div class="map__responsive">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.532893338734!2d-57.95859648522191!3d-34.91816998170978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e632617b5fdd%3A0xc91f2b2cc4e5c3b3!2sEstudio%20Jur%C3%ADdico%20Antonio%20-%20Vampa%20%7C%20abogados!5e0!3m2!1ses-419!2sar!4v1661711824805!5m2!1ses-419!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
 

@@ -12,6 +12,7 @@
 a:hover {
     font-weight: 800 !important;
     text-decoration: underline;
+    color: black;
 }
 
 a {
@@ -200,14 +201,25 @@ ul.seguros {
     line-height: 50px;
 }
 
+.contacto__container_column1 {
+    width: 35%;
+}
 .contacto__container_column2 {
-    width: 400px;
+    width: 35%;
     border-left: 1px solid #B2B2B2;
     padding-left: 15px;
 }
 
+.btn-primary {
+    background-color: #757575;
+}
+
 .contacto__container_column3 {
     border: 1px solid #B2B2B2;
+}
+
+.map__responsive {
+    display: none;
 }
 
 .formImput {
@@ -385,6 +397,26 @@ ul.seguros {
         display: none;
     }
 
+    .contacto__container_column3 {
+        display: none;
+    }
+
+    .contacto__container_column1 {
+        width: 54%;
+    }
+
+    .contacto__container_column2 {
+        width: 46%;
+    }
+
+    .map__responsive {
+        display: block;
+      margin-top: 2%;
+        height: 250px;
+        border-radius: 5px;
+
+    }
+
     #contact__responsive {
         display: block;
         width: 80%;
@@ -445,6 +477,15 @@ ul.seguros {
 
     .carousel-caption p {
         display: none;
+    }
+
+    .contacto__container {
+        flex-direction: column-reverse;
+    }
+
+    .contacto__item {
+        width: 100%;
+        border: none;
     }
 
     #service__galery {
