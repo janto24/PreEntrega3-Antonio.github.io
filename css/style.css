@@ -63,9 +63,9 @@ a {
 
 .header__logoCont_text {
     align-self: center;
-
 }
 
+/* hasta acá 9.17hs*/
 #contacto {
     display: flex;
     color: black;
@@ -411,10 +411,9 @@ ul.seguros {
 
     .map__responsive {
         display: block;
-      margin-top: 2%;
+        margin-top: 2%;
         height: 250px;
         border-radius: 5px;
-
     }
 
     #contact__responsive {
